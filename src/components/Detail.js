@@ -12,15 +12,15 @@ const Detail = ({ exerciseDetail }) => {
   const extraDetail = [
     {
       icon: BodyPartImage,
-      name: bodyPart,
+      name: bodyPart
     },
     {
       icon: TargetImage,
-      name: target,
+      name: target
     },
     {
       icon: EquipmentImage,
-      name: equipment,
+      name: equipment
     },
   ];
 
@@ -42,8 +42,8 @@ const Detail = ({ exerciseDetail }) => {
           of the best <br /> exercises to target your {target}. It will help you
           improve your <br /> mood and gain energy.
         </Typography>
-        {extraDetail.map((item) => (
-          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+        {extraDetail.map((item, index) => (
+          <Stack key={index} direction="row" gap="24px" alignItems="center">
             <Button
               sx={{
                 background: "#fff2db",
